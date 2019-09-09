@@ -1,6 +1,20 @@
-<h1>Search for the movies</h1>
+<html>
+    <head>
+        <title>Movie App API</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container mt-4" style="max-width: 40%;">
+            <h1 class="text-center">Search for a movie</h1>
 
-<form action="/results" method="get">
-    <input type="text" name="searchterm" placeholder="search term">
-    <input type="submit">
-</form>
+            <form action="/results" method="GET" class="mt-4">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="searchterm" placeholder="movie name">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary ">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

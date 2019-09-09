@@ -1,5 +1,15 @@
-<h1>RESULTS PAGE</h1>
-
-<%data["Search"].forEach(function(movie){%>
-<li><%=movie["Title"]%></li>
-<%});%>
+<html>
+    <head>
+        <title>Movie App API</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container mt-4 ">
+            <h1 class="text-center">List of movies</h1>
+            <ul class="mt-4 list-group list-group-flush">
+                <%data["Search"].forEach(function(movie){%>
+                <li class="list-group-item"><%=movie["Title"]%></li>
+                <%});%>
+            </ul>        
+    </body>
+</html>
